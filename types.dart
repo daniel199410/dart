@@ -9,4 +9,13 @@ main() {
     d = false;
     e = 'e';
     print('$a, $b, $c, $d, $e');
+    //conversions
+    int f = int.parse('1');
+    double g = double.parse('1.345');
+    assert(f == 1);
+    assert(g == 1.345);
+    String h = f.toString();
+    String i = g.toStringAsFixed(2);
+    assert(h == '3');
+    assert(i == '1.34');
 }
